@@ -1,2 +1,3 @@
 Welcome To the Spark World
 Let us get into some of the basic stuffs.
+To start with Spark you must know the Architecture of it.
