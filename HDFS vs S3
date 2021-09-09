@@ -1,0 +1,20 @@
+HDFS :: Hadoop Distributed File Systesm.  
+-----------------------------------------
+1. We can Treat HDFS as File System that can handle large datasets running on commodity hardware.
+2. It's Open Source, but it's not scalable , adding nodes/hard drive process is slow and expensive.
+3. When storing data in HDFS, you must budget for 3x the storage space that your data occupies.
+4. HDFS has a significant advantage with read and write performance due to data locality. It can provide many times more read throughput than S3.
+5. HDFS provides several options for data security, like kerberized user authentication and file system permission layers.
+6. HDFS doesn’t give performance with storing small files, it will overload the name node with metadata and impact performance. 
+    In addition, data stored on one cluster is not available on a different cluster.
+
+S3 : Simple Storage Service
+-----------------------------
+1. S3 is an object storage, S3 is an object store, and therefore is not strictly used as a file system.
+2. S3 is not open source, but it is auto - scalable , S3’s availability and durability is far superior to HDFS.
+3. S3, AWS backs up the data automatically and the customer only pays for the data that needs to be stored instead of its replicas.
+4. AWS gives you the ability to expand the cluster size to address issues with insufficient throughput.
+5. S3 accesses and stores objects using the key/object relationship.
+6. S3 storage cost is 5X cheaper than HDFS, if we include Human effort to maintain HDFS it will be 10X cheaper.
+7. S3 is elastic, HDFS is not. S3 elasticity is pay-as-you-go pricing model.
+
